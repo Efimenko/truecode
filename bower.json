@@ -1,0 +1,22 @@
+{
+  "name": "fucking-frontend.",
+  "description": "frontend postcss",
+  "main": "gulpfile.js",
+  "authors": [
+    "foont1ck"
+  ],
+  "license": "ISC",
+  "moduleType": [],
+  "homepage": "https://github.com/foont1ck/fucking-frontend",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "jquery": "~2.1.4",
+    "normalize-css": "normalize.css#~3.0.3"
+  }
+}
