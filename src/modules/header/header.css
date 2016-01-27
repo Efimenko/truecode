@@ -1,0 +1,7 @@
+.header{
+	@nest &__nav{
+		display: inline-block;
+		float: right;
+		margin-top: 13px;
+	}
+}

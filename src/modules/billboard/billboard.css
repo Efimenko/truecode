@@ -1,0 +1,14 @@
+.billboard{
+	min-height: 100%;
+	background: #0d0f1c resolve('forest.jpg') no-repeat center;
+	background-size: cover;
+	padding-top: 12%;
+	@nest &__logo{
+		display: block !important;
+		margin: auto;
+	}
+	@nest &__nav{
+		text-align: center;
+		margin-top: 5%;
+	}
+}
