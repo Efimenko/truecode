@@ -5,8 +5,39 @@
 	padding-top: 12%;
 	position: relative;
 	overflow: hidden;
-	@nest &__logo{
-		
+	@nest &__text{
+		font-weight: 300;
+		color: rgba(255,255,255,.7);
+		@nest & h1{
+			text-transform: uppercase;
+			font-size: 90px;
+			line-height: 0.85;
+			letter-spacing: -4px;
+			margin: 0;
+			display: inline-block;
+			clear: fix;
+		}
+		@nest & i{
+			font-style: normal;
+			padding-left: 7%;
+			display: block;
+			text-align: left;
+			font-size: 1rem;
+			font-weight: 300;
+			letter-spacing: initial;
+			text-transform: none;
+		}
+		@nest & span{
+			display: block;
+			font-size: 2rem;
+			font-weight: 300;
+			letter-spacing: initial;
+			text-transform: none;
+			text-align: center;
+		}
+	}
+	@nest &__title{
+		display: inline-block;
 	}
 	@nest &__nav{
 		display: inline-block;
