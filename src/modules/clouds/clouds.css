@@ -1,0 +1,19 @@
+.clouds{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 250.625em;
+	height: 43.75em;
+	background: resolve('clouds.png') left bottom repeat-x;
+	animation: cloudLoop 80s linear infinite;
+}
+@keyframes cloudLoop {
+	0% {
+		-webkit-transform: translate3d(0, 0, 0);
+		transform: translate3d(0, 0, 0);
+	}
+	100% {
+		-webkit-transform: translate3d(-50%, 0, 0);
+		transform: translate3d(-50%, 0, 0);
+	}
+}

@@ -1,8 +1,8 @@
 /*! global */
-@import url(https://fonts.googleapis.com/css?family=Roboto:400,500,700,300,100,900&subset=latin,cyrillic);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700,300,600&subset=latin,cyrillic);
 
 :root {
-	--mainFont: 'Roboto', sans-serif;
+	--mainFont: 'Open Sans', sans-serif;
 	--mainColor: #1ab394;
 	--mainTextColor: #000;
 	--fontSize: 16px;

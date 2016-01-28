@@ -3,12 +3,21 @@
 	background: #0d0f1c resolve('forest.jpg') no-repeat center;
 	background-size: cover;
 	padding-top: 12%;
+	position: relative;
+	overflow: hidden;
 	@nest &__logo{
-		display: block !important;
-		margin: auto;
+		
 	}
 	@nest &__nav{
-		text-align: center;
-		margin-top: 5%;
+		display: inline-block;
+		float: right;
+		margin-top: 17px;
+	}
+	@nest &__bottom{
+		position: absolute;
+		left: 0;
+		bottom: 0;
+		width: 100%;
+		padding-bottom: 30px;
 	}
 }

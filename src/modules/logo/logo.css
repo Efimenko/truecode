@@ -4,14 +4,15 @@
 	color: #fff;
 	width: 4em;
 	line-height: 1;
-	font-size: 1.5em;
+	font-size: 1.2em;
 	@nest & span{
 		display: inline-block;
 		font-size: 1.375em;
-	    padding: 0.075em 0.375em;
-	    background: var(--mainColor);
-	    // margin-bottom: 0.25em;
-	    border-radius:2px;
+	    padding: 0.025em 0.275em 0.15em;
+	    // background: var(--mainColor);
+	    border: 1px solid var(--mainColor);
+	    // border-radius:2px;
+	    color: var(--mainColor);
 	    font-weight: 700;
 	    text-align: center;
 	}
@@ -25,8 +26,8 @@
 			display: inline-block;
 			opacity: .5;
 			position: relative;
-			top: -0.219em;
-			margin-right: 0.125em;
+			top: -0.189em;
+			margin-right: 0.235em;
    			letter-spacing:0.145em;
    			font-weight: 700;
    			border-radius: 2px;

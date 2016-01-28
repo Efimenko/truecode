@@ -3,20 +3,35 @@
 		padding-left: 0;
 		list-style: none;
 		margin: 0;
-		text-transform: lowercase;
+		font-size: 10px;
 		@nest &__item{
 			display: inline-block;
 			margin-left: 20px;
+			color: rgba(255, 255, 255, 0.7);
+			font-weight: 400;
+			@nest &_active{
+				color: #fff;
+				@nest & a{
+					@nest &:hover{
+						cursor: default !important;
+					}
+					@nest &:after{
+						transform: scale(1) !important;
+					}
+				}
+			}
 		}
 		@nest & a{
-			color: #fff;
+			color: inherit;
 			text-decoration: none;
 			position: relative;
 			display: block;
+			text-transform: uppercase;
+			transition: color 300ms;
 			@nest &:after{
 				content: '';
 				position: absolute;
-				height: 2px;
+				height: 1px;
 				left: 0;
 				width: 100%;
 				bottom: -5px;
@@ -25,6 +40,7 @@
 				background: var(--mainColor);
 			}
 			@nest &:hover{
+				color: #fff;
 				@nest &:after{
 					transform: scale(1);
 				}
