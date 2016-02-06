@@ -1,7 +1,36 @@
 .header{
+	border-bottom: 1px solid #f5f5fa;
+	background: #f5f5fa;
+	min-height: 60px;
+	padding-top: 10px;
+	padding-bottom: 10px;
 	@nest &__nav{
+		color: rgba(23, 23, 36, 0.8) !important;
 		display: inline-block;
 		float: right;
-		margin-top: 13px;
+		margin-top: 17px;
+		@nest & .nav-list__item{
+			@nest & a{
+				@nest &:hover{
+					color: rgb(23, 23, 36) !important;
+				}
+			}
+		}
+		@nest & .nav-list__item_active{
+			color: rgb(23, 23, 36);
+		}
+	}
+	@nest &__logo{
+		color: rgb(23, 23, 36) !important;
+	}
+	@nest &_fixed{
+		background: rgba(255,255,255,.9);
+		position: fixed;
+		left: 0;
+		right: 0;
+		top: -74px;
+		transition: transform .5s;
+		transform: translate3d(0, 74px, 0);
+		z-index: 100;
 	}
 }

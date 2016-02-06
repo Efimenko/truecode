@@ -1,0 +1,19 @@
+.title{
+	text-align: center;
+	@nest & h2{
+		margin-top: 0;
+	    font-weight: 300;
+	    font-size: 32px;
+		@nest & span{
+			font-weight: 600;
+		}
+	}
+	@nest &__sub{
+		text-transform: uppercase;
+		font-size: 8px;
+		font-weight: 600;
+		opacity: .9;
+		letter-spacing: .65em;
+		margin-bottom: 10px;
+	}
+}
