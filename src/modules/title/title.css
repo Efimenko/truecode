@@ -1,9 +1,11 @@
 .title{
 	text-align: center;
+	padding-bottom: 100px;
 	@nest & h2{
 		margin-top: 0;
 	    font-weight: 300;
 	    font-size: 32px;
+	    margin-bottom: 0;
 		@nest & span{
 			font-weight: 600;
 		}

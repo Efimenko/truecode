@@ -1,0 +1,13 @@
+.row{
+	margin-left: -20px;
+	margin-right: -20px;
+	clear: fix;
+}
+.col{
+	padding-left: 20px;
+	padding-right: 20px;
+	float: left;
+	@nest &_4{
+		width: 33.33333333333%;
+	}
+}

@@ -3,5 +3,5 @@ $('.burger').click(function(){
 	nav = '#'+burger.attr('data-nav');
 
 	burger.toggleClass('burger_active');
-	$(nav).fadeToggle();
+	$(nav).parent().fadeToggle();
 });

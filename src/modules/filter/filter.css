@@ -1,0 +1,42 @@
+.filter{
+	padding-left: 0;
+	list-style: none;
+	margin: 0;
+	text-align: center;
+	@nest & a{
+		color: inherit;
+		text-decoration: none;
+		font-size: 11px;
+		padding: 5px 10px;
+		display: block;
+		position: relative;
+		@nest &:after{
+			content: '';
+			position: absolute;
+			left: 0;
+			top: 0;
+			width: 100%;
+			height: 100%;
+			border: 1px solid var(--mainColor);
+			transform: scale(0);
+			transition: transform 300ms;
+		}
+		@nest &:hover{
+			@nest &:after{
+				transform: scale(1);
+			}
+		}
+	}
+	@nest &__item{
+		display: inline-block;
+		text-transform: uppercase;
+		@nest &_active{
+			@nest & a{
+				cursor: default;
+				@nest &:after{
+					transform: scale(1);
+				}
+			}
+		}
+	}
+}

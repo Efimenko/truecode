@@ -2,7 +2,6 @@
 	min-height: 100%;
 	background: #0d0f1c resolve('forest.jpg') no-repeat center;
 	background-size: cover;
-	padding-top: 12%;
 	position: relative;
 	overflow: hidden;
 	font-size: 16px;
@@ -11,7 +10,6 @@
 	}
 	@media (max-width: 767px){
 		font-size: 12px;
-		padding-top: 20%;
 	}
 	@media (max-width: 480px){
 		font-size: 11px;
@@ -19,6 +17,11 @@
 	@nest &__text{
 		font-weight: 300;
 		color: rgba(255,255,255,.7);
+		position: absolute;
+		left: 0;
+		right: 0;
+		top: 40%;
+		transform: translateY(-50%);
 		@nest & h1{
 			text-transform: uppercase;
 			font-size: 5.625em;
