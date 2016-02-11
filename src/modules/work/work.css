@@ -1,0 +1,79 @@
+.work{
+	display: block;
+	text-decoration: none;
+	margin-bottom: 60px;
+	transition: left 300ms;
+	@media (max-width: 767px){
+		width: 50%;
+		float: left;
+	}
+	@media (max-width: 480px){
+		width: 100%;
+	}
+	@nest &s{
+		margin-top: 100px;
+		@media (max-width: 1199px){
+			margin-top: 40px;
+		}
+	}
+	@nest &__screen{
+		display: block;
+		width: 100%;
+		transition: transform 1s;
+	}
+	@nest &__frame{
+		background: resolve('frame.png') no-repeat top center;
+		background-size: contain;
+		position: relative;
+		padding-top: 57.5%;
+	}
+	@nest &__inner{
+		overflow: hidden;
+		position: absolute;
+		left: 12%;
+		right: 11.8%;
+		top: 5%;
+		bottom: 11%;
+		@nest &:after{
+			content: '';
+			position: absolute;
+			left: 0;
+			top: 0;
+			width: 100%;
+			height: 100%;
+			opacity: 0;
+			background: var(--greyBg);
+			z-index: 10;
+			transition: opacity .6s;
+		}
+	}
+	@nest &__title{
+		position: absolute;
+		opacity: 0;
+		left: 50%;
+		top: 50%;
+		transform: translate(-50%, -50%);
+		color: #000;
+		text-transform: uppercase;
+		font-size: 10px;
+	    padding: 5px 6px;
+	    font-weight: 700;
+	    border: 1px solid #000;
+	    transition: opacity .6s;
+	    z-index: 15;
+	    text-align: center;
+	}
+	@nest &:hover{
+		@nest & .work__inner{
+			@nest &:after{
+				opacity: .7;
+			}
+		}
+		@nest & .work__title{
+			opacity: 1;
+		}
+		@nest & .work__screen{
+			transform: scale(1.2);
+		}
+	}
+}

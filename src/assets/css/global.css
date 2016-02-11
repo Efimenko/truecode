@@ -6,6 +6,7 @@
 	--mainColor: #1ab394;
 	--mainTextColor: #0c0c17;
 	--fontSize: 16px;
+	--greyBg: #f5f5fa;
 }
 
 html,body{
@@ -25,6 +26,11 @@ html,body{
 	box-sizing: border-box;
 }
 
+img{
+	max-width: 100%;
+	height: auto;
+}
+
 .wrapper{
 	height: 100%;
 }
@@ -32,8 +38,8 @@ html,body{
 .container{
 	margin: auto;
 	width: 1140px;
-	padding-left: 20px;
-	padding-right: 20px;
+	padding-left: 15px;
+	padding-right: 15px;
 	position: relative;
 	clear: fix;
 	@media (max-width: 1199px){
@@ -44,7 +50,5 @@ html,body{
 	}
 	@media (max-width: 767px){
 		width: 100%;
-		padding-left: 10px;
-		padding-right: 10px;
 	}
 }

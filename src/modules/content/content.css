@@ -1,5 +1,11 @@
 .content{
-	background: #f5f5fa;
+	background: var(--greyBg);
 	height: 2000px;
 	padding-top: 100px;
+	@media (max-width: 1199px){
+		padding-top: 50px;
+	}
+	@media (max-width: 767px){
+		padding-top: 30px;
+	}
 }

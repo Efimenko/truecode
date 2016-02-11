@@ -9,6 +9,9 @@
 		display: inline-block;
 		float: right;
 		margin-top: 17px;
+		@media (max-width: 767px){
+			color: rgba(255, 255, 255, 0.7) !important;
+		}
 		@nest & .nav-list__item{
 			@nest & a{
 				@nest &:hover{
@@ -18,6 +21,9 @@
 		}
 		@nest & .nav-list__item_active{
 			color: rgb(23, 23, 36);
+			@media (max-width: 767px){
+				color: rgba(255, 255, 255, 0.7);
+			}
 		}
 	}
 	@nest &__logo{

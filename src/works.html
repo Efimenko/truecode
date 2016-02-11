@@ -7,12 +7,14 @@
 					<i>code</i>
 				</a>
 				<nav class="nav header__nav">
-					<ul class="nav-list" id="main-nav-list">
-						<li class="nav-list__item nav-list__item_active"><a href="#">Home</a></li>
-						<li class="nav-list__item"><a href="#">Works</a></li>
-						<li class="nav-list__item"><a href="#">About us</a></li>
-						<li class="nav-list__item"><a href="#">Contacts</a></li>
-					</ul>
+					<div class="nav__wrapper">
+						<ul class="nav-list" id="main-nav-list">
+							<li class="nav-list__item"><a href="index.html">Home</a></li>
+							<li class="nav-list__item nav-list__item_active"><a href="#">Works</a></li>
+							<li class="nav-list__item"><a href="#">About us</a></li>
+							<li class="nav-list__item"><a href="#">Contacts</a></li>
+						</ul>
+					</div>
 					<button class="burger" type="button" data-nav="main-nav-list">
 						<span></span>
 						<span></span>
@@ -28,18 +30,63 @@
 					<h2>Our <span>Portfolio</span></h2>
 				</div>
 				<ul class="filter">
-					<li class="filter__item filter__item_active"><a href="#">All</a></li>
-					<li class="filter__item"><a href="#">Landing Page</a></li>
-					<li class="filter__item"><a href="#">Multipage</a></li>
-					<li class="filter__item"><a href="#">Adaptive</a></li>
-					<li class="filter__item"><a href="#">Fixed</a></li>
-					<li class="filter__item"><a href="#">CMS</a></li>
+					<li class="filter__item filter__item_active" data-filter="all">All</li>
+					<li class="filter__item" data-filter="landing">Landing Page</li>
+					<li class="filter__item" data-filter="multipage">Multipage</li>
+					<li class="filter__item" data-filter="adaptive">Adaptive</li>
+					<li class="filter__item" data-filter="fixed">Fixed</li>
+					<li class="filter__item" data-filter="cms">CMS</li>
 				</ul>
 				<div class="works">
 					<div class="row">
-						<div class="col col_3">
-							<div class="works__item"></div>
-						</div>
+						<a href="#" class="col col_md-4 col_sm-6 work" title="Scale" data-category="multipage">
+							<div class="work__frame">
+								<div class="work__inner">
+									<img class="work__screen" src="assets/img/baikal.png" alt="Screenshot 'Baikalika'">
+									<span class="work__title">Baikalika</span>
+								</div>
+							</div>
+						</a>
+						<a href="#" class="col col_md-4 col_sm-6 work" title="Scale" data-category="multipage">
+							<div class="work__frame">
+								<div class="work__inner">
+									<img class="work__screen" src="assets/img/bel.png" alt="Screenshot 'Belyy ruchey'">
+									<span class="work__title">Belyy ruchey</span>
+								</div>
+							</div>
+						</a>
+						<a href="#" class="col col_md-4 col_sm-6 work" title="Scale" data-category="landing">
+							<div class="work__frame">
+								<div class="work__inner">
+									<img class="work__screen" src="assets/img/cmk.png" alt="Screenshot 'Cmk'">
+									<span class="work__title">Cmk</span>
+								</div>
+							</div>
+						</a>
+						<a href="#" class="col col_md-4 col_sm-6 work" title="Scale" data-category="multipage">
+							<div class="work__frame">
+								<div class="work__inner">
+									<img class="work__screen" src="assets/img/baikal.png" alt="Screenshot 'Baikalika'">
+									<span class="work__title">Baikalika</span>
+								</div>
+							</div>
+						</a>
+						<a href="#" class="col col_md-4 col_sm-6 work" title="Scale" data-category="multipage">
+							<div class="work__frame">
+								<div class="work__inner">
+									<img class="work__screen" src="assets/img/bel.png" alt="Screenshot 'Belyy ruchey'">
+									<span class="work__title">Belyy ruchey</span>
+								</div>
+							</div>
+						</a>
+						<a href="#" class="col col_md-4 col_sm-6 work" title="Scale" data-category="landing">
+							<div class="work__frame">
+								<div class="work__inner">
+									<img class="work__screen" src="assets/img/cmk.png" alt="Screenshot 'Cmk'">
+									<span class="work__title">Cmk</span>
+								</div>
+							</div>
+						</a>
 					</div>
 				</div>
 			</div>
