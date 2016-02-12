@@ -63,6 +63,61 @@
 	    z-index: 15;
 	    text-align: center;
 	}
+	@nest &-iframe{
+		position: fixed;
+		left: 5%;
+		width: 90%;
+		height: 90%;
+		top: 3%;
+		z-index: 1000;
+		display: none;
+		
+		@nest & iframe{
+			width: 100%;
+			height: 100%;
+			// border: 1px solid var(--mainColor);
+			border: 0;
+			display: block;
+		}
+		@nest &__tags{
+			position: absolute;
+			bottom: -35px;
+			left: 50%;
+			transform: translateX(-50%);
+		}
+		@nest &__close{
+			position: absolute;
+			z-index: 100;
+			border: 0;
+			right: -40px;
+			top: 0px;
+			background-color: transparent;
+			width: 30px;
+			opacity: .7;
+			padding: 5px;
+			outline: none;
+			transition: opacity 300ms;
+			@nest &:hover{
+				opacity: 1;
+			}
+			@nest & span{
+				width: 100%;
+				height: 2px;
+				margin-bottom: 3px;
+				display: block;
+				background: var(--mainColor);
+				position: relative;
+				transform: rotate(45deg);
+				@nest &:first-child{
+					top: 4.5px;
+				}
+				@nest &:last-child{
+					transform: rotate(-45deg);
+				}
+			}
+			
+		}
+	}
 	@nest &:hover{
 		@nest & .work__inner{
 			@nest &:after{

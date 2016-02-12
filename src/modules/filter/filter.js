@@ -8,8 +8,8 @@ $('.filter__item').click(function(){
 		if (category == 'all') {
 			$('.work').fadeIn();
 		}else{
-			$('.work').not('.work[data-category='+category+']').hide();
-			$('.work[data-category='+category+']').fadeIn();
+			$('.work').not('.work[data-category~='+category+']').hide();
+			$('.work[data-category~='+category+']').fadeIn();
 		}
 	}
 });

@@ -33,6 +33,7 @@ img{
 
 .wrapper{
 	height: 100%;
+	cursor: default !important;
 }
 
 .container{
@@ -51,4 +52,8 @@ img{
 	@media (max-width: 767px){
 		width: 100%;
 	}
+}
+
+.hidden{
+	overflow: hidden;
 }

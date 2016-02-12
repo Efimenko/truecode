@@ -1,0 +1,15 @@
+.tags{
+	padding-left: 0;
+	list-style: none;
+	margin: 0;
+	text-align: center;
+	@nest &__item{
+		display: inline-block;
+		text-transform: uppercase;
+		border: 1px solid var(--mainColor);
+		color: #fff;
+		padding: 3px 5px;
+		font-size: 10px;
+		margin-right: 3px;
+	}
+}
