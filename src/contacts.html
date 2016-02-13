@@ -1,0 +1,76 @@
+//= template/head.html
+	<div class="wrapper">
+		<header class="header">
+			<div class="container">
+				<a href="#" title="На Главную" class="logo header__logo">
+					<span>true</span>
+					<i>code</i>
+				</a>
+				<nav class="nav header__nav">
+					<div class="nav__wrapper">
+						<ul class="nav-list" id="main-nav-list">
+							<li class="nav-list__item"><a href="index.html">Home</a></li>
+							<li class="nav-list__item"><a href="works.html">Works</a></li>
+							<li class="nav-list__item"><a href="#">About us</a></li>
+							<li class="nav-list__item nav-list__item_active"><a href="contacts.html">Contacts</a></li>
+						</ul>
+					</div>
+					<button class="burger" type="button" data-nav="main-nav-list">
+						<span></span>
+						<span></span>
+						<span></span>
+					</button>
+				</nav>
+			</div>
+		</header>
+		<div class="content">
+			<div class="container">
+				<div class="title">
+					<div class="title__sub">WANNA WORK WITH US?</div>
+					<h2><span>Contact</span> Us</h2>
+				</div>
+				<div class="row contacts">
+					<div class="col col_sm-4 contacts__item">
+						<i class="icon-screen-smartphone contacts__icon"></i>
+						<p class="contacts__text">Phone: (068) 250-5200<br>
+						(093) 622-8335<br>
+						(093) 776-6717</p>
+					</div>
+					<div class="col col_sm-4 contacts__item">
+						<i class="icon-location-pin contacts__icon"></i>
+						<p class="contacts__text">29 Liuteranska St, <br>Kiev, Ukraine</p>
+					</div>
+					<div class="col col_sm-4 contacts__item">
+						<i class="icon-envelope-open contacts__icon"></i>
+						<p class="contacts__text"><a href="mailto:contact@truecode.io">contact@truecode.io</a></p>
+					</div>
+				</div>
+				<form class="form form_contacts">
+					<div class="form__input">
+						<label for="form-name">Name*</label>
+						<input type="text" name="name" id="form-name" required>
+					</div>
+					<div class="row">
+						<div class="col col_sm-6">
+							<div class="form__input">
+								<label for="form-email">Email*</label>
+								<input type="email" name="email" id="form-email" required>
+							</div>
+						</div>
+						<div class="col col_sm-6">
+							<div class="form__input">
+								<label for="form-company">Company</label>
+								<input type="text" name="company" id="form-company">
+							</div>
+						</div>
+					</div>
+					<label for="form-message">Message*</label>
+					<textarea name="message" id="form-message" class="form__textarea"></textarea>
+					<div class="text text_center">
+						<button type="submit" class="btn form__btn">Sent it</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+//= template/footer.html

@@ -15,7 +15,7 @@ html,body{
 	font-size: var(--fontSize);
 	color: var(--mainTextColor);
 	min-width: 303px;
-	background: #fff;
+	background: var(--greyBg);
 	text-rendering: optimizeLegibility;
 	-webkit-font-smoothing: antialiased;
 }

@@ -1,0 +1,5 @@
+.text{
+	@nest &_center{
+		text-align: center;
+	}
+}

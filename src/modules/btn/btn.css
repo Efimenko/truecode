@@ -1,0 +1,10 @@
+.btn{
+	display: inline-block;
+	text-transform: uppercase;
+	padding: 8px 20px;
+	color: #fff;
+	font-size: 11px;
+	letter-spacing: 2px;
+	background: #171724;
+	outline: none;
+}

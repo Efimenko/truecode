@@ -16,6 +16,9 @@
 			@nest & a{
 				@nest &:hover{
 					color: rgb(23, 23, 36) !important;
+					@media (max-width: 767px){
+						color: rgba(255, 255, 255, 0.7) !important;
+					}
 				}
 			}
 		}
@@ -34,9 +37,6 @@
 		position: fixed;
 		left: 0;
 		right: 0;
-		top: -74px;
-		transition: transform .5s;
-		transform: translate3d(0, 74px, 0);
 		z-index: 100;
 	}
 }

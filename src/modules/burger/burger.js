@@ -4,4 +4,5 @@ $('.burger').click(function(){
 
 	burger.toggleClass('burger_active');
 	$(nav).parent().fadeToggle();
+	$('body').toggleClass('hidden');
 });
