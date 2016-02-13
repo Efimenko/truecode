@@ -21,7 +21,7 @@ $('.work').click(function(e){
 				src:$(this).attr('href'),
 				load:function(){
 					$('.work-iframe').fadeIn();
-					$('.pattern .spinner').hide();
+					// $('.pattern .spinner').hide();
 				}
 			});
 		$('.work-iframe').append(iframe);

@@ -1,4 +1,11 @@
 .text{
+	font-size: 20px;
+	font-weight: 300;
+	@nest & p{
+		@nest & span{
+			font-weight: 400;
+		}
+	}
 	@nest &_center{
 		text-align: center;
 	}

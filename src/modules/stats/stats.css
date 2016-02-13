@@ -1,0 +1,35 @@
+.stats{
+	padding-top: 70px;
+    padding-bottom: 70px;
+    background: #fff;
+    border-top: 1px solid #E8E6E6;
+    border-bottom: 1px solid #E8E6E6;
+    margin-top: 60px;
+    @media (max-width: 767px){
+    	padding-top: 30px;
+    	padding-bottom: 30px;
+    	margin-top: 30px;
+    }
+    @nest &__item{
+    	text-transform: uppercase;
+    	letter-spacing: 2px;
+    	color: var(--mainColor);
+    	font-size: 11px;
+    	text-align: center;
+    	@media (max-width: 767px){
+    		margin-bottom: 20px;
+    	}
+    	@nest &:last-child{
+    		@media (max-width: 767px){
+    			margin-bottom: 0;
+    		}
+    	}
+    	@nest & span{
+    		display: block;
+    		font-weight: 300;
+    		font-size: 36px;
+    		color: #000;
+    		margin-bottom: 10px;
+    	}
+    }
+}
